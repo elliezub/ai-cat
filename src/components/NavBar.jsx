@@ -1,24 +1,24 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
     <>
       <nav className="sm:flex w-full max-w-[1600px] mx-auto justify-between font-extrabold items-center p-12 hidden">
         <div>
-          <p className="text-lg aicat">AICAT</p>
+          <Link to="/" className="text-lg aicat">AICAT</Link>
         </div>
         <ul className="flex space-x-4">
           <li>
-            <a href="#">ABOUT</a>
+           <Link to="/About">ABOUT</Link>
           </li>
           <li>
-            <a href="#">SHOP</a>
+           <Link to="/Shop">SHOP</Link>
           </li>
           <li>
-            <a href="#">REVIEWS</a>
+            <Link to="/Reviews">REVIEWS</Link>
           </li>
           <li>
-            <a href="#">SOCIAL</a>
+            <Link to="/Social">SOCIAL</Link>
           </li>
         </ul>
       </nav>
