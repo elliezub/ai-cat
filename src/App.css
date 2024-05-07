@@ -1,0 +1,56 @@
+h1,
+h2,
+.fonta {
+    font-family: "Anton";
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+.reviewcontainer>* {
+    /* background-color: rgba(140, 0, 255, 0.804);
+    background-image: linear-gradient(to bottom left,rgb(58, 0, 129), #7011ff, #7504ffc7); */
+    background-color: rgb(159, 196, 255);
+    background-image: linear-gradient(to bottom left, rgba(91, 0, 201, 0.753), #8b3effab, #a45affc7);
+    /* background-color: rgba(230, 207, 255, 0.316); */
+    box-shadow: 3px 3px 5px rgba(23, 23, 23, 0.165);
+    outline: solid 1px rgba(135, 22, 255, 0.465);
+    /* background-image: linear-gradient(to bottom left, rgb(57, 0, 127), #7316ff, #7504ffb2); */
+}
+
+.desc-box {
+    --s: 15px;
+    /* the size on the corner */
+    --t: 3px;
+    /* the thickness of the border */
+    --g: 5px;
+    /* the gap between the border and image */
+
+    padding: calc(var(--g) + var(--t));
+    outline: var(--t) solid #000000;
+
+    outline-offset: calc(-1*var(--t));
+    mask:
+        conic-gradient(at var(--s) var(--s), #0000 75%, #000 0) 0 0/calc(100% - var(--s)) calc(100% - var(--s)),
+        linear-gradient(#000 0 0) content-box;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.desc-box span {
+    padding-left: 5px;
+}
+
+input[type="email"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #6d28d9, 0 0 0 4px rgb(182, 118, 255);
+
+}
+
+@media (max-width: 400px) {
+    .follow-us {
+        font-size: 1.8rem;
+    }
+}
