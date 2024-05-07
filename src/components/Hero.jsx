@@ -25,7 +25,7 @@ export default function Hero() {
               src="https://i.ibb.co/1JJLS3r/Untitled-design-9.png"
               alt="AI cat"
             />
-            {/* fix size of img on md > */}
+            {/* TODO fix size/placement of img on md > */}
           </div>
         </div>
       </div>

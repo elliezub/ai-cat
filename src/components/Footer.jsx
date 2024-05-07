@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="mx-auto mt-12 flex justify-center lg:px-0 px-4 flex-col items-center"> 
-    {/* maybe add dif bg color here */}
-      <div className="grid lg:grid-cols-5 lg:max-w-full grid-cols-2 max-w-lg mx-auto">
+    <footer className="mt-12 flex justify-center lg:px-0 px-4 flex-col items-center w-full">
+      {/* maybe add dif bg color here */}
+      <div className="grid lg:grid-cols-5 md:max-w-full grid-cols-2 max-w-lg">
         <img src="https://i.postimg.cc/2S5DPx2R/1.jpg" alt="" className="" />
         <img src="https://i.postimg.cc/t4mjyVM1/3.jpg" alt="" className="" />
         <img
